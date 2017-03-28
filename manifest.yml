@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: HoyLibertyCloudant
+  host: HoyLibertyCloudant
+  disk_quota: 1024M
+  services:
+  - HoyLibertyCloudant-cloudantNoSQLDB
+  env:
+    BLUEMIX_APP_MGMT_ENABLE: noproxy jmx debug
